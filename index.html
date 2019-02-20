@@ -25,9 +25,7 @@
 
       <h2>Medical Library Assocation Meeting Abstracts</h2>
 
-      <p>Display any CSV file as a searchable, filterable, pretty HTML table. Done in 100% JavaScript. <a href='https://github.com/derekeder/csv-to-html-table'>Code on GitHub</a>.</p>
-
-      <p>Here's a table of Health Clinics from the <a href='https://data.cityofchicago.org/browse?q=health%20clinic&sortBy=relevance&utf8=%E2%9C%93'>City of Chicago Data Portal</a>.</p>
+      <p>This site contains abstracts from the Medical Library Association Annual Meetings, 2001-2018.</p>
       
       <div id='table-container'></div>
 
@@ -64,7 +62,7 @@
         element: 'table-container', 
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
-        datatables_options: {"paging": false},
+        datatables_options: {"paging": true, "ordering":true, "},
         custom_formatting: [[4, format_link]]
       });
     </script>
